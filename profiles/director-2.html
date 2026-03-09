@@ -1,12 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Director Profile - VaZi</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Derek | Director - VaZi</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+
+body{
+margin:0;
+background:#f5f5f5;
+font-family:'Work Sans',sans-serif;
+color:#111;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+border-bottom:1px solid #e6e6e6;
+background:white;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:30px;
+font-weight:700;
+}
+
+.nav-links a{
+margin-left:35px;
+text-decoration:none;
+color:#111;
+font-weight:500;
+letter-spacing:1px;
+position:relative;
+}
+
+.nav-links a:hover{
+color:#ff2d55;
+}
+
+/* HERO HEADER */
+
+.hero{
+text-align:center;
+padding:100px 20px 40px;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:80px;
+font-weight:900;
+margin:0;
+}
+
+.hero span{
+color:#ff2d55;
+}
+
+/* PROFILE CARD */
+
+.profile-wrapper{
+display:flex;
+justify-content:center;
+padding:40px 20px 100px;
+}
+
+.profile-card{
+
+background:white;
+width:700px;
+padding:60px 50px;
+border-radius:18px;
+
+box-shadow:
+0 20px 40px rgba(0,0,0,0.08);
+
+text-align:center;
+
+transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.profile-card:hover{
+transform:translateY(-8px);
+box-shadow:
+0 30px 60px rgba(0,0,0,0.12);
+}
+
+/* PROFILE IMAGE */
+
+.profile-pic{
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+margin-top:-110px;
+
+border:6px solid white;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.1);
+
+transition:transform .4s ease;
+}
+
+.profile-pic:hover{
+transform:scale(1.08);
+}
+
+/* NAME */
+
+.profile-name{
+font-family:'Playfair Display',serif;
+font-size:42px;
+margin-top:20px;
+margin-bottom:10px;
+}
+
+/* ROLE */
+
+.profile-role{
+color:#ff2d55;
+font-weight:600;
+letter-spacing:1px;
+margin-bottom:30px;
+}
+
+/* BIO */
+
+.profile-bio{
+font-size:16px;
+line-height:1.9;
+color:#555;
+text-align:left;
+}
+
+/* BACK BUTTON */
+
+.back-link{
+display:inline-block;
+margin-top:40px;
+text-decoration:none;
+color:#111;
+font-weight:500;
+}
+
+.back-link:hover{
+color:#ff2d55;
+}
+
+/* DIRECTOR GRID (future ready) */
+
+.director-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+max-width:1100px;
+margin:80px auto;
+padding:0 20px;
+}
+
+.director-card{
+background:white;
+border-radius:14px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.07);
+transition:transform .3s ease;
+}
+
+.director-card:hover{
+transform:translateY(-6px);
+}
+
+.director-card img{
+width:80px;
+height:80px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+.director-card h4{
+font-family:'Playfair Display',serif;
+margin:10px 0 5px;
+}
+
+.director-card p{
+font-size:14px;
+color:#777;
+}
+
+</style>
+
 </head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="logo">VaZi</div>
+
+<div class="nav-links">
+<a href="../index.html">HOME</a>
+<a href="#">ABOUT US</a>
+<a href="#">GALLERY</a>
+<a href="#">CONTACT</a>
+</div>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Director <span>Profile</span></h1>
+
+</section>
+
+<!-- PROFILE CARD -->
+
+<div class="profile-wrapper">
+
+<div class="profile-card">
+
+<img src="../images/derek.jpg" class="profile-pic">
+
+<h2 class="profile-name">Derek</h2>
+
+<p class="profile-role">Director of Technology & Cybersecurity</p>
+
+<div class="profile-bio">
+
+<p>
+Derek is a Software Engineer and cybersecurity specialist passionate about building secure, scalable, and intelligent digital systems. With a strong technical foundation in software development, systems architecture, and security engineering, he brings both innovation and discipline to every project he leads.
+</p>
+
+<p>
+As Director of Technology at VaZi, Derek oversees the company’s technical strategy, infrastructure design, and cybersecurity framework. He is responsible for ensuring that all digital platforms are resilient, efficient, and aligned with VaZi’s long-term vision. His leadership focuses on combining technical excellence with practical execution.
+</p>
+
+<p>
+Derek has experience working on complex systems including API integrations, database design, intelligent systems, and secure application architecture. His expertise spans backend development, web technologies, data structures, and security analysis — allowing him to approach challenges from both a development and risk perspective.
+</p>
+
+<p>
+Beyond technical execution, Derek believes in continuous growth, innovation, and strategic thinking. His philosophy centers on building technology that not only works — but lasts, scales, and protects. He is committed to driving VaZi forward through disciplined engineering and forward-looking cybersecurity practices.
+</p>
+
+</div>
+
+<a href="../index.html" class="back-link">← Back to VaZi Home</a>
+
+</div>
+
+</div>
 <body class="profile-page">
 
     <header class="profile-header">
